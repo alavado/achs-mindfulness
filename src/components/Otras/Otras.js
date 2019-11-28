@@ -36,12 +36,12 @@ const Otras = () => {
           <h1>Interfaz de meditación</h1>
         </div>
         <div className="otras-captura">
-          <p>Buddhify</p>
-          <img src={uiMeditacionBuddhify} />
-        </div>
-        <div className="otras-captura">
           <p>Calm</p>
           <img src={uiMeditacionCalm} />
+        </div>
+        <div className="otras-captura">
+          <p>Smiling Mind</p>
+          <img src={uiMeditacionSmilingMind} />
         </div>
         <div className="otras-captura">
           <p>Daily Mindfulness</p>
@@ -52,16 +52,16 @@ const Otras = () => {
           <img src={uiMeditacionHeadspace} />
         </div>
         <div className="otras-captura">
+          <p>Buddhify</p>
+          <img src={uiMeditacionBuddhify} />
+        </div>
+        <div className="otras-captura">
           <p>Insight Timer</p>
           <img src={uiMeditacionInsightTimer} />
         </div>
         <div className="otras-captura">
           <p>Mindfulness</p>
           <img src={uiMeditacionMindfulness} />
-        </div>
-        <div className="otras-captura">
-          <p>Smiling Mind</p>
-          <img src={uiMeditacionSmilingMind} />
         </div>
       </div>
     </div>
