@@ -1,11 +1,18 @@
 import React from 'react'
 import './App.css'
+import { Route, Switch } from 'react-router-dom'
+import Otras from '../Otras';
 
 function App() {
   return (
-    <div>
-      ACHS MINDFULNESS
-    </div>
+    <Switch>
+      <Route exact path="/" component={() =>
+        <div>
+          ACHS MINDFULNESS
+        </div>
+      } />
+      <Route exact path="/otras" component={Otras} />
+    </Switch>
   );
 }
 
