@@ -14,4 +14,9 @@ button {
   border: none;
   cursor: pointer;
   outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus {
+  outline: none;
 }

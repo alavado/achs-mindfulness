@@ -31,11 +31,11 @@ const Otras = () => {
         </div>
         <div className="otras-captura">
           <p>Calm</p>
-          <img src={uiAnimoCalm} />
+          <img src={uiAnimoCalm} alt="" />
         </div>
         <div className="otras-captura">
           <p>Smiling Mind</p>
-          <img src={uiAnimoSmilingMind} />
+          <img src={uiAnimoSmilingMind} alt="" />
         </div>
       </div>
       <div className="seccion-otras">
@@ -44,23 +44,23 @@ const Otras = () => {
         </div>
         <div className="otras-captura">
           <p>Buddhify</p>
-          <img src={uiSeleccionBuddhify} />
+          <img src={uiSeleccionBuddhify} alt="" />
         </div>
         <div className="otras-captura">
           <p>Calm</p>
-          <img src={uiSeleccionCalm} />
+          <img src={uiSeleccionCalm} alt="" />
         </div>
         <div className="otras-captura">
           <p>Daily Mindfulness</p>
-          <img src={uiSeleccionDailyMindfulness} />
+          <img src={uiSeleccionDailyMindfulness} alt="" />
         </div>
         <div className="otras-captura">
           <p>Insight Timer</p>
-          <img src={uiSeleccionInsightTimer} />
+          <img src={uiSeleccionInsightTimer} alt="" />
         </div>
         <div className="otras-captura">
           <p>Mindfulness</p>
-          <img src={uiSeleccionMindfulness} />
+          <img src={uiSeleccionMindfulness} alt="" />
         </div>
       </div>
       <div className="seccion-otras">
@@ -69,31 +69,31 @@ const Otras = () => {
         </div>
         <div className="otras-captura">
           <p>Calm</p>
-          <img src={uiMeditacionCalm} />
+          <img src={uiMeditacionCalm} alt="" />
         </div>
         <div className="otras-captura">
           <p>Smiling Mind</p>
-          <img src={uiMeditacionSmilingMind} />
+          <img src={uiMeditacionSmilingMind} alt="" />
         </div>
         <div className="otras-captura">
           <p>Daily Mindfulness</p>
-          <img src={uiMeditacionDailyMindfulness} />
+          <img src={uiMeditacionDailyMindfulness} alt="" />
         </div>
         <div className="otras-captura">
           <p>Headspace</p>
-          <img src={uiMeditacionHeadspace} />
+          <img src={uiMeditacionHeadspace} alt="" />
         </div>
         <div className="otras-captura">
           <p>Buddhify</p>
-          <img src={uiMeditacionBuddhify} />
+          <img src={uiMeditacionBuddhify} alt="" />
         </div>
         <div className="otras-captura">
           <p>Insight Timer</p>
-          <img src={uiMeditacionInsightTimer} />
+          <img src={uiMeditacionInsightTimer} alt="" />
         </div>
         <div className="otras-captura">
           <p>Mindfulness</p>
-          <img src={uiMeditacionMindfulness} />
+          <img src={uiMeditacionMindfulness} alt="" />
         </div>
       </div>
     </div>
