@@ -1,0 +1,21 @@
+#contenedor-medicion-subjetiva {
+  padding: 32px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#slider-subjetivo {
+  width: 100%;
+}
+
+#contenedor-medicion-subjetiva button {
+  margin-top: 32px;
+}
+
+#contenedor-icono-estado-animo {
+  margin: 32px 0;
+}

@@ -8,13 +8,13 @@ body {
 }
 
 button {
-  height: 32px;
-  border-radius: 16px;
-  padding: 0px 16px;
+  border-radius: 32px;
+  padding: 8px 16px;
   border: none;
   cursor: pointer;
   outline: none;
   -webkit-tap-highlight-color: transparent;
+  font-size: 6vw;
 }
 
 button:focus {
@@ -23,6 +23,6 @@ button:focus {
 
 #contenedor-app {
   background: #1D1F2A;
-  height: 731px;
-  width: 411px;
+  min-height: 100vh;
+  width: 100vw;
 }

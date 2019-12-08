@@ -10,9 +10,11 @@ const Principal = () => {
   return (
     <div id="contenedor-principal">
       <div>ACHS MINDFULNESS</div>
-      <button onClick={navegar('/dass21')}>Responder DASS-21</button>
-      <button onClick={navegar('/subjetiva')}>Indicar estado de ánimo</button>
-      <button onClick={navegar('/ejercicios')}>Realizar ejercicio</button>
+      <div className="contenido-centrado">
+        <button onClick={navegar('/ejercicios')}>Realizar ejercicio</button>
+        <button onClick={navegar('/subjetiva')}>Indicar estado de ánimo</button>
+        <button onClick={navegar('/dass21')}>Responder DASS-21</button>
+      </div>
     </div>
   )
 }

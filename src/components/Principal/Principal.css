@@ -7,3 +7,9 @@
 #contenedor-principal button {
   margin-top: 10px;
 }
+
+.contenido-centrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
