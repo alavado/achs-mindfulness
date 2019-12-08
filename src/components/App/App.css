@@ -1,6 +1,6 @@
 body {
-  background: #1D1F2A;
   color: #E5E1E6;
+  background: gray;
 }
 
 * {
@@ -19,4 +19,10 @@ button {
 
 button:focus {
   outline: none;
+}
+
+#contenedor-app {
+  background: #1D1F2A;
+  height: 731px;
+  width: 411px;
 }
