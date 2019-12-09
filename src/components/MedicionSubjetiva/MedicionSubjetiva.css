@@ -9,11 +9,15 @@
 }
 
 #slider-subjetivo {
-  width: 100%;
+  width: 75%;
+}
+
+#contenedor-medicion-subjetiva h1 {
+  font-size: 2em;
 }
 
 #contenedor-medicion-subjetiva button {
-  margin-top: 32px;
+  margin-top: 64px;
 }
 
 #contenedor-icono-estado-animo {
