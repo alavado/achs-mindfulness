@@ -9,11 +9,19 @@
 }
 
 #slider-subjetivo {
-  width: 75%;
+  width: 85%;
 }
 
 #contenedor-medicion-subjetiva h1 {
   font-size: 2em;
+  text-align: center;
+  line-height: 1.25;
+  margin-bottom: 32px;
+}
+
+#contenedor-medicion-subjetiva p {
+  font-size: 1.5em;
+  margin-top: 16px;
 }
 
 #contenedor-medicion-subjetiva button {

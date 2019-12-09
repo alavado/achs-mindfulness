@@ -1,11 +1,15 @@
 import React from 'react'
 import './Dass21.css'
+import BotonVolver from '../BotonVolver'
 
 const Dass21 = () => {
   return (
-    <div>
-      21 preguntas
-    </div>
+    <>
+      <BotonVolver />
+      <div>
+        21 preguntas
+      </div>
+    </>
   )
 }
 

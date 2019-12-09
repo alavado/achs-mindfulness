@@ -22,7 +22,15 @@ button:focus {
 }
 
 #contenedor-app {
-  background: #1D1F2A;
+  background-color: #1D1F2A;
   min-height: 100vh;
   width: 100vw;
+}
+
+button.boton-volver {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #E5E1E6;
+  background-color: #1D1F2A;
 }
