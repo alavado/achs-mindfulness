@@ -8,10 +8,6 @@
   justify-content: center;
 }
 
-#slider-subjetivo {
-  width: 85%;
-}
-
 #contenedor-medicion-subjetiva h1 {
   font-size: 2em;
   text-align: center;
@@ -19,15 +15,19 @@
   margin-bottom: 32px;
 }
 
-#contenedor-medicion-subjetiva p {
-  font-size: 1.5em;
-  margin-top: 16px;
+#contenedor-iconos-estado-animo {
+  margin: 16px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  gap: 16px;
 }
 
-#contenedor-medicion-subjetiva button {
-  margin-top: 64px;
+.contenedor-estado-animo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#contenedor-icono-estado-animo {
-  margin: 32px 0;
+.contenedor-estado-animo p {
+  margin-top: 8px;
 }

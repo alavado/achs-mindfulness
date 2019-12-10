@@ -12,7 +12,7 @@ const Principal = () => {
       <div>ACHS MINDFULNESS</div>
       <div className="contenido-centrado">
         <button onClick={navegar('/ejercicios')}>Realizar ejercicio</button>
-        <button onClick={navegar('/subjetiva')}>Indicar estado de ánimo</button>
+        <button onClick={navegar('/subjetiva/1')}>Indicar estado de ánimo</button>
         <button onClick={navegar('/dass21')}>Responder DASS-21</button>
       </div>
     </div>
