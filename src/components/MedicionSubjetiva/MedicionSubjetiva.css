@@ -15,14 +15,15 @@
   margin-bottom: 32px;
 }
 
-#contenedor-iconos-estado-animo {
-  margin: 16px 0;
-  display: grid;
-  grid-template-columns: repeat(3, 33%);
-  gap: 16px;
+.contenedor-iconos-estado-animo {
+  margin: 16px;
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  flex-wrap: wrap;
 }
 
-#contenedor-iconos-estado-animo svg {
+.contenedor-iconos-estado-animo svg {
   cursor: pointer;
 }
 
@@ -30,6 +31,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-basis: 100px;
+  margin-bottom: 32px;
 }
 
 .contenedor-estado-animo p {

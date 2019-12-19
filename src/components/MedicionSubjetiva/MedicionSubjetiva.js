@@ -25,19 +25,29 @@ const MedicionSubjetiva = ({ match }) => {
   return (
     <>
       <div id="contenedor-medicion-subjetiva">
-        <h1>¿Cómo te sientes?</h1>
+        <h1>Me siento...</h1>
         {paso === '1' ?
-          <div id="contenedor-iconos-estado-animo">
-            <FontAwesomeIcon onClick={irAPaso2('malos')} icon={faFrown} size={"5x"} />
-            <FontAwesomeIcon onClick={irAPaso2('meh')} icon={faMeh} size={"5x"} />
-            <FontAwesomeIcon onClick={irAPaso2('buenos')} icon={faSmile} size={"5x"} />
+          <div className="contenedor-iconos-estado-animo">
+            <div className="contenedor-estado-animo">
+              <FontAwesomeIcon onClick={irAPaso2('malos')} icon={faFrown} size={"5x"} />
+            </div>
+            <div className="contenedor-estado-animo">
+              <FontAwesomeIcon onClick={irAPaso2('meh')} icon={faMeh} size={"5x"} />
+            </div>
+            <div className="contenedor-estado-animo">
+              <FontAwesomeIcon onClick={irAPaso2('buenos')} icon={faSmile} size={"5x"} />
+            </div>
           </div> :
           <>
-            <div id="contenedor-iconos-estado-animo">
+            <div className="contenedor-iconos-estado-animo">
               {animosClasificados[animoGeneral]
                 .map(nombre => animos.find(animo => animo.nombre === nombre))
                 .map(({icono, nombre}, i) => (
-                  <div key={`animo-${i}`} className="contenedor-estado-animo">
+                  <div
+                    key={`animo-${i}`}
+                    className="contenedor-estado-animo"
+                    style={animosClasificados[animoGeneral].length % 2 === 0 ? {flexBasis: 150} : {}}
+                  >
                     <FontAwesomeIcon icon={icono} size={"5x"} />
                     <p>{nombre}</p>
                   </div>
