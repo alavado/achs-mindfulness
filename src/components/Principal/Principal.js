@@ -9,7 +9,7 @@ const Principal = () => {
 
   return (
     <div id="contenedor-principal">
-      <div>ACHS MINDFULNESS</div>
+      <h1>ACHS MINDFULNESS</h1>
       <div className="contenido-centrado">
         <button onClick={navegar('/ejercicios')}>Realizar ejercicio</button>
         <button onClick={navegar('/subjetiva/1')}>Indicar estado de ánimo</button>

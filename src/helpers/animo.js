@@ -1,5 +1,7 @@
 import { faLaughBeam, faSmileBeam, faSmile, faMeh, faSadTear, faFrown, faAngry, faFlushed, faLaughSquint, faFrownOpen, faTired, faGrinWink } from '@fortawesome/free-solid-svg-icons'
 
+// http://www.scielo.edu.uy/scielo.php?script=sci_arttext&pid=S1688-42212012000200005
+
 export const animos = [
    // I. Pleasant activation (energetic, excited)
   {

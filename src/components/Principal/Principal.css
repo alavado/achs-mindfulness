@@ -4,6 +4,11 @@
   align-items: center;
 }
 
+#contenedor-principal > h1 {
+  font-size: 2em;
+  margin: 16px 0;
+}
+
 #contenedor-principal button {
   margin-top: 10px;
 }
