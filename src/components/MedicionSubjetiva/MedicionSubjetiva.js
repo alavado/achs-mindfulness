@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './MedicionSubjetiva.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { animos } from '../../helpers/animo'
-import BotonVolver from '../BotonVolver'
 import { faFrown, faSmile, faMeh } from '@fortawesome/free-solid-svg-icons'
 import { useHistory } from 'react-router-dom'
 
@@ -25,7 +24,6 @@ const MedicionSubjetiva = ({ match }) => {
 
   return (
     <>
-      <BotonVolver />
       <div id="contenedor-medicion-subjetiva">
         <h1>¿Cómo te sientes?</h1>
         {paso === '1' ?
