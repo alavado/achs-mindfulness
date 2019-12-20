@@ -1,0 +1,23 @@
+export const preguntas = [
+  'Me costó mucho calmarme.',
+  'Me di cuenta que tenía la boca seca.',
+  'No podía sentir nada positivo.',
+  'Tuve problemas para respirar. (ej. respirar muy rápido, o perder el aliento sin haber hecho un esfuerzo físico).',
+  'Se me hizo difícil motivarme para hacer cosas.',
+  'Me descontrolé en ciertas situaciones.',
+  'Me sentí tembloroso/a (ej. manos temblorosas)',
+  'Sentí que estaba muy nervioso/a.',
+  'Estuve preocupado/a por situaciones en las cuales podría sentir pánico y hacer el ridículo.',
+  'Sentí que no tenía nada por que vivir.',
+  'Noté que me estaba poniendo intranquilo/a.',
+  'Se me hizo difícil relajarme.',
+  'Me sentí triste y deprimido/a.',
+  'No soportaba que nada me apartara de lo que estaba haciendo.',
+  'Estuve a punto de tener un ataque de pánico.',
+  'Fui incapaz de entusiasmarme con nada.',
+  'Sentí que valía muy poco como persona.',
+  'Sentí que estaba muy irritable.',
+  'Sentía los latidos de mi corazón a pesar que no había hecho ningún esfuerzo físico.',
+  'Sentí miedo sin saber por qué.',
+  'Sentí que la vida no tenía ningún sentido.'
+]
