@@ -4,6 +4,15 @@
   align-items: center;
 }
 
+#logo-achs {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+}
+
 #contenedor-principal > h1 {
   font-family: "Vegan Style Personal Use";
   font-size: 3em;
