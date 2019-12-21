@@ -14,7 +14,7 @@ function App() {
       <img src={logo} alt="Logo ACHS" id="logo-achs" />
       <Switch>
         <Route exact path="/" component={Principal} />
-        <Route exact path="/dass21" component={Dass21} />
+        <Route exact path="/dass21/:paso" component={Dass21} />
         <Route exact path="/subjetiva/:paso" component={MedicionSubjetiva} />
         <Route exact path="/ejercicios" component={SeleccionEjercicio} />
         <Route exact path="/otras" component={Otras} />

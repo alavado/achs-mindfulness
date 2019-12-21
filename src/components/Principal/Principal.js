@@ -14,7 +14,7 @@ const Principal = () => {
         <div className="latido"></div>
         <button className="boton-meditar" onClick={navegar('/ejercicios')}>Meditar</button>
         <button onClick={navegar('/subjetiva/1')}>Mi estado de ánimo</button>
-        <button onClick={navegar('/dass21')}>Cuestionario semanal</button>
+        <button onClick={navegar('/dass21/0')}>Cuestionario semanal</button>
       </div>
     </div>
   )
