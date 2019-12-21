@@ -20,44 +20,45 @@ const Dass21 = ({ match }) => {
 
   const irAPaso = paso => () => {
     setAlternativaSeleccionada(null)
-    history.push(`/dass21/${paso}`)
+    if (paso <= preguntas.length) {
+      history.push(`/dass21/${paso}`)
+    }
+    else {
+      history.push('/')
+    }
   }
 
-  if (paso === '0') {
-    return (
-      <div className="contenedor">
-        <div className="contenido-centrado cuestionario">
-          <h1>Cuestionario semanal</h1>
-          <div className="instrucciones">
-            <p>Lea cada frase e indique en qué medida esa frase describe lo que le pasó o sintió durante la última semana</p>
-            <p>No hay respuestas buenas o malas</p>
-            <p>Responda según su primera impresión, no se detenga demasiado en cada frase</p>
-          </div>
-          <button onClick={irAPaso(1)}>Comenzar</button>
-        </div>
+  return (
+    <div className="contenedor">
+      <div className="contenido-centrado cuestionario">
+        {paso === '0' ?
+          <>
+            <h1>Cuestionario semanal</h1>
+            <div className="instrucciones">
+              <p>Lea cada frase e indique en qué medida esa frase describe lo que le pasó o sintió durante la última semana</p>
+              <p>No hay respuestas buenas o malas</p>
+              <p>Responda según su primera impresión, no se detenga demasiado en cada frase</p>
+            </div>
+            <button onClick={irAPaso(1)}>Comenzar</button>
+          </> :
+          <>
+            <h1>{preguntas[Number(paso) - 1]}</h1>
+            <ul>
+              {alternativas.map((a, i) => (
+                <li key={`alternativa-${i}`} onClick={() => setAlternativaSeleccionada(i)}>
+                  <span>{alternativaSeleccionada === i && <FontAwesomeIcon icon={iconoAlternativaMarcada} />}</span>{a}
+                </li>
+              ))}
+            </ul>
+            <button onClick={irAPaso(Number(paso) + 1)}>Siguiente</button>
+            <div className="progreso-cuestionario">
+              <p>Pregunta {paso} de {preguntas.length}</p>
+            </div>
+          </>
+        }
       </div>
-    )
-  }
-  else {
-    return (
-      <div className="contenedor">
-        <div className="contenido-centrado cuestionario">
-          <h1>{preguntas[Number(paso) - 1]}</h1>
-          <ul>
-            {alternativas.map((a, i) => (
-              <li key={`alternativa-${i}`} onClick={() => setAlternativaSeleccionada(i)}>
-                <span>{alternativaSeleccionada === i && <FontAwesomeIcon icon={iconoAlternativaMarcada} />}</span>{a}
-              </li>
-            ))}
-          </ul>
-          <button onClick={irAPaso(Number(paso) + 1)}>Siguiente</button>
-          <div className="progreso-cuestionario">
-            <p>Pregunta {paso} de {preguntas.length}</p>
-          </div>
-        </div>
-      </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default Dass21
