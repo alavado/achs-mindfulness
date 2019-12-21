@@ -7,6 +7,14 @@ body {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Vegan Style Personal Use';
+  src: url('../../assets/VeganStylePersonalUse.woff2') format('woff2'),
+      url('../../assets/VeganStylePersonalUse.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 button {
   border-radius: 32px;
   padding: 8px 16px;

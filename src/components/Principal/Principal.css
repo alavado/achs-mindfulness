@@ -5,8 +5,9 @@
 }
 
 #contenedor-principal > h1 {
-  font-size: 2em;
-  margin: 16px 0;
+  font-family: "Vegan Style Personal Use";
+  font-size: 2.5em;
+  margin: 32px 0;
 }
 
 #contenedor-principal button {

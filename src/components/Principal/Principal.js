@@ -9,7 +9,7 @@ const Principal = () => {
 
   return (
     <div id="contenedor-principal">
-      <h1>ACHS MINDFULNESS</h1>
+      <h1>Mindfulness</h1>
       <div className="contenido-centrado">
         <div className="latido"></div>
         <button className="boton-meditar" onClick={navegar('/ejercicios')}>Meditar</button>
