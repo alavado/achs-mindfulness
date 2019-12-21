@@ -24,6 +24,7 @@
 
 .cuestionario h1 {
   font-size: 1.5em;
+  max-width: 320px;
 }
 
 .cuestionario li {
