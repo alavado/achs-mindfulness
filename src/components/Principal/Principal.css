@@ -13,6 +13,40 @@
   margin-top: 10px;
 }
 
+.latido {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  margin-top: 10px;
+  animation: prueba 2s ease-in-out infinite;
+}
+
+.boton-meditar {
+  font-size: 2em;
+  margin-bottom: 32px;
+  margin-top: 25px;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px 75px;
+  z-index: 2;
+}
+
+@keyframes prueba {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .contenido-centrado {
   display: flex;
   flex-direction: column;
