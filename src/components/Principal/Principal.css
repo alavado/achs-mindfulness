@@ -13,13 +13,13 @@
   opacity: 0.8;
 }
 
-#contenedor-principal > h1 {
+#contenedor-principal h1 {
   font-family: "Vegan Style Personal Use";
   font-size: 3em;
   margin: 56px 0;
 }
 
-#contenedor-principal button {
+#contenedor-principal button, .latido {
   margin-top: 12px;
 }
 
@@ -29,7 +29,6 @@
   width: 150px;
   height: 150px;
   border-radius: 75px;
-  margin-top: 10px;
   animation: prueba 2s ease-in-out infinite;
 }
 

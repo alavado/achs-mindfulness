@@ -8,14 +8,6 @@
   justify-content: center;
 }
 
-#contenedor-medicion-subjetiva h1 {
-  font-size: 2em;
-  text-align: center;
-  line-height: 1.25;
-  margin-bottom: 32px;
-  font-family: 'Arimo';
-}
-
 .contenedor-iconos-estado-animo {
   margin: 16px;
   display: flex;

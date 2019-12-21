@@ -6,10 +6,12 @@ import Principal from '../Principal';
 import Dass21 from '../Dass21';
 import MedicionSubjetiva from '../MedicionSubjetiva';
 import SeleccionEjercicio from '../SeleccionEjercicio';
+import logo from '../../assets/Logo_ACHS.png'
 
 function App() {
   return (
     <div id="contenedor-app">
+      <img src={logo} alt="Logo ACHS" id="logo-achs" />
       <Switch>
         <Route exact path="/" component={Principal} />
         <Route exact path="/dass21" component={Dass21} />
