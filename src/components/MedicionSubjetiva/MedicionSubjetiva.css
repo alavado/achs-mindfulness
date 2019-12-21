@@ -13,6 +13,7 @@
   text-align: center;
   line-height: 1.25;
   margin-bottom: 32px;
+  font-family: 'Arimo';
 }
 
 .contenedor-iconos-estado-animo {
@@ -27,7 +28,7 @@
   cursor: pointer;
 }
 
-.contenedor-estado-animo {
+div[class^="contenedor-estado-animo"] {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,6 +36,13 @@
   margin-bottom: 32px;
 }
 
-.contenedor-estado-animo p {
+div[class^="contenedor-estado-animo"] p {
   margin-top: 8px;
+  font-family: 'Arimo';
+  font-size: 1em;
+}
+
+.contenedor-estado-animo-seleccionado {
+  color: white;
+  font-weight: bold;
 }

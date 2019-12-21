@@ -16,6 +16,7 @@ const MedicionSubjetiva = ({ match }) => {
   const history = useHistory()
   const { paso } = match.params
   const [animoGeneral, setAnimoGeneral] = useState('no especificado')
+  const [animoSeleccionado, setAnimoSeleccionado] = useState(null)
 
   const irAPaso2 = animo => () => {
     setAnimoGeneral(animo)
@@ -45,8 +46,9 @@ const MedicionSubjetiva = ({ match }) => {
                 .map(({icono, nombre}, i) => (
                   <div
                     key={`animo-${i}`}
-                    className="contenedor-estado-animo"
+                    className={nombre === animoSeleccionado ? "contenedor-estado-animo-seleccionado" : "contenedor-estado-animo"}
                     style={animosClasificados[animoGeneral].length % 2 === 0 ? {flexBasis: 150} : {}}
+                    onClick={e => setAnimoSeleccionado(nombre)}
                   >
                     <FontAwesomeIcon icon={icono} size={"5x"} />
                     <p>{nombre}</p>
@@ -54,7 +56,7 @@ const MedicionSubjetiva = ({ match }) => {
                 ))
               }
             </div>
-            <button>Guardar</button>
+            <button onClick={() => history.push('/')}>Guardar</button>
           </>
         }
       </div>
