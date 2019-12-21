@@ -51,6 +51,9 @@ const Dass21 = ({ match }) => {
             ))}
           </ul>
           <button onClick={irAPaso(Number(paso) + 1)}>Siguiente</button>
+          <div className="progreso-cuestionario">
+            <p>Pregunta {paso} de {preguntas.length}</p>
+          </div>
         </div>
       </div>
     )

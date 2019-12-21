@@ -48,3 +48,9 @@
   justify-content: center;
   align-items: center;
 }
+
+.progreso-cuestionario {
+  position: absolute;
+  bottom: 16px;
+  font-size: .8em;
+}
