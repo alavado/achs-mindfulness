@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'Vegan Style Personal Use';
-  src: url('../../assets/VeganStylePersonalUse.woff2') format('woff2'),
-      url('../../assets/VeganStylePersonalUse.woff') format('woff');
+  src: url('../../assets/fonts/VeganStylePersonalUse.woff2') format('woff2'),
+      url('../../assets/fonts/VeganStylePersonalUse.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Arimo';
-  src: url('../../assets/Arimo.woff2') format('woff2'),
-      url('../../assets/Arimo.woff') format('woff');
+  src: url('../../assets/fonts/Arimo.woff2') format('woff2'),
+      url('../../assets/fonts/Arimo.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

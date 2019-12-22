@@ -6,7 +6,7 @@ import Principal from '../Principal';
 import Dass21 from '../Dass21';
 import MedicionSubjetiva from '../MedicionSubjetiva';
 import SeleccionEjercicio from '../SeleccionEjercicio';
-import logo from '../../assets/Logo_ACHS.png'
+import logo from '../../assets/images/Logo_ACHS.png'
 
 function App() {
   return (

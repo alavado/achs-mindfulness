@@ -8,7 +8,7 @@ export const preguntas = [
   'Me sentí tembloroso (por ejemplo, manos temblorosas)',
   'Sentí que estaba muy nervioso',
   'Estuve preocupado por situaciones en las cuales podría sentir pánico y hacer el ridículo',
-  'Sentí que no tenía nada por que vivir',
+  'Sentí que no tenía nada por qué vivir',
   'Noté que me estaba poniendo intranquilo',
   'Se me hizo difícil relajarme',
   'Me sentí triste y deprimido',
