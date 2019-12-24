@@ -1,20 +1,19 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './Principal.css'
 
 const Principal = () => {
 
-  const history = useHistory()
-  const navegar = path => () => history.push(path)
-
   return (
     <div id="contenedor-principal">
+      <Link to="/dass21/0" id="link-dass21"><button>DASS21</button></Link>
       <h1>Mindfulness</h1>
       <div className="contenido-centrado">
-        <div className="latido"></div>
-        <button className="boton-meditar" onClick={navegar('/ejercicios')}>Meditar</button>
-        <button onClick={navegar('/subjetiva/1')}>Mi estado de ánimo</button>
-        <button onClick={navegar('/dass21/0')}>Cuestionario semanal</button>
+        <Link to="/ejercicios">
+          <div className="latido"></div>
+          <button className="boton-meditar">Meditar</button>
+        </Link>
+        <Link to="/dass21/0"><button>Cuestionario semanal</button></Link>
       </div>
     </div>
   )

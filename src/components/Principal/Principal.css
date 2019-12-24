@@ -10,7 +10,7 @@
   right: 4px;
   width: 32px;
   height: 32px;
-  opacity: 0.8;
+  opacity: 0.25;
 }
 
 #contenedor-principal h1 {
@@ -61,8 +61,8 @@
   }
 }
 
-.contenido-centrado {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#link-dass21 {
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }

@@ -68,3 +68,9 @@ h1 {
   margin-bottom: 32px;
   font-family: 'Arimo';
 }
+
+.contenido-centrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
