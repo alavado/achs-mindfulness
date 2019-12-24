@@ -15,7 +15,7 @@ const Principal = () => {
           <div className="latido"></div>
           <button className="boton-meditar">Meditar</button>
         </Link>
-        <Link to="/dass21/0"><button>Cuestionario semanal</button></Link>
+        <Link to="/subjetiva/1"><button>Estado de ánimo</button></Link>
       </div>
     </div>
   )
