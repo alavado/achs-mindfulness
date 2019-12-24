@@ -45,12 +45,16 @@ const Dass21 = ({ match }) => {
             <h1>{preguntas[Number(paso) - 1]}</h1>
             <ul>
               {alternativas.map((a, i) => (
-                <li key={`alternativa-${i}`} onClick={() => setAlternativaSeleccionada(i)}>
+                <li
+                  key={`alternativa-${i}-${paso}`}
+                  onClick={() => setAlternativaSeleccionada(i)}
+                  style={{ animationDelay: `${0.75 + 0.1 * i}s` }}
+                >
                   <span>{alternativaSeleccionada === i && <FontAwesomeIcon icon={iconoAlternativaMarcada} />}</span>{a}
                 </li>
               ))}
             </ul>
-            <button onClick={irAPaso(Number(paso) + 1)}>Siguiente</button>
+            <button onClick={irAPaso(Number(paso) + 1)} disabled={alternativaSeleccionada === null}>Siguiente</button>
             <div className="progreso-cuestionario">
               <p>Pregunta {paso} de {preguntas.length}</p>
             </div>
