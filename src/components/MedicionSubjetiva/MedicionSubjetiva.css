@@ -12,7 +12,7 @@
   margin: 16px;
   display: flex;
   justify-content: center;
-  width: 350px;
+  width: 400px;
   flex-wrap: wrap;
 }
 
@@ -20,12 +20,44 @@
   cursor: pointer;
 }
 
-div[class^="contenedor-estado-animo"] {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.boton-estado-animo {
   flex-basis: 100px;
   margin-bottom: 32px;
+  background-color: transparent;
+  transform: scale(1.2);
+  opacity: 0;
+  animation: aparece-carita .5s ease-in-out forwards;
+}
+
+@keyframes aparece-carita {
+  0% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.boton-estado-animo:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.boton-estado-animo:nth-child(2) {
+  animation-delay: .2s;
+}
+
+.boton-estado-animo:nth-child(3) {
+  animation-delay: .4s;
+}
+
+.boton-estado-animo:nth-child(4) {
+  animation-delay: .6s;
+}
+
+.boton-estado-animo:nth-child(5) {
+  animation-delay: .8s;
 }
 
 div[class^="contenedor-estado-animo"] p {

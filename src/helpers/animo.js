@@ -1,89 +1,87 @@
-import { faLaughBeam, faSmileBeam, faSmile, faMeh, faSadTear, faFrown, faAngry, faFlushed, faLaughSquint, faFrownOpen, faTired, faGrinWink } from '@fortawesome/free-solid-svg-icons'
-
 // http://www.scielo.edu.uy/scielo.php?script=sci_arttext&pid=S1688-42212012000200005
 
 export const animos = [
    // I. Pleasant activation (energetic, excited)
   {
     nombre: 'Eufórico',
-    icono: faLaughSquint,
+    icono: 'partying-face',
     activacion: 2,
     placer: 1
   },
   // II. Activated pleasure (enthusiastic, elated)
   {
     nombre: 'Entusiasmado',
-    icono: faLaughBeam,
+    icono: 'grinning-face',
     activacion: 1,
     placer: 2
   },
   // III. Pleasure (satisfied, pleased)
   {
     nombre: 'Feliz',
-    icono: faSmileBeam,
+    icono: 'smiling-face-with-smiling-eyes',
     activacion: 0,
     placer: 3
   },
   // IV. Deactivated pleasure (serene, peaceful)
   {
     nombre: 'Relajado',
-    icono: faGrinWink,
+    icono: 'relieved-face',
     activacion: -1,
     placer: 2
   },
   // V. Pleasant deactivation (placid, tranquil)
   {
     nombre: 'Tranquilo',
-    icono: faSmile,
+    icono: 'slightly-smiling-face',
     activacion: -2,
     placer: 1
   },
   // VI. Deactivation (quiet, still)
   {
     nombre: 'Ocioso',
-    icono: faMeh,
+    icono: 'neutral-face',
     activacion: -3,
     placer: 0
   },
   // VII. Unpleasant deactivation (sluggish, tired)
   {
     nombre: 'Cansado',
-    icono: faFrownOpen,
+    icono: 'weary-face',
     activacion: -2,
     placer: -1
   },
   // VIII. Deactivated displeasure (sad, gloomy)
   {
     nombre: 'Desganado',
-    icono: faFrown,
+    icono: 'confused-face',
     activacion: -1,
     placer: -2
   },
   // IX. Displeasure (unhappy, dissatisfied)
   {
     nombre: 'Triste',
-    icono: faSadTear,
+    icono: 'crying-face',
     activacion: 0,
     placer: -3
   },
   // X. Activated displeasure (distressed, upset)
   {
     nombre: 'Irritado',
-    icono: faAngry,
+    icono: 'angry-face',
     activacion: 1,
     placer: -2
   },
   // XI. Unpleasant activation (frenzied, jittery)
   {
     nombre: 'Nervioso',
-    icono: faTired,
+    icono: 'confounded-face',
     activacion: 2,
     placer: -1
   },
   // XII. Activation (aroused, activated)
   {
     nombre: 'Alerta',
-    icono: faFlushed,
+    icono: 'grimacing-face',
     activacion: 3,
     placer: 0
   }].reverse()

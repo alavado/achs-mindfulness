@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import './MedicionSubjetiva.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { animos } from '../../helpers/animo'
-import { faFrown, faSmile, faMeh } from '@fortawesome/free-solid-svg-icons'
+import { faFrown, faSmile, faMeh, faSortAmountDown } from '@fortawesome/free-solid-svg-icons'
 import { useHistory } from 'react-router-dom'
+import Emoji from 'react-emojis'
 
 const animosClasificados = {
   malos: ['Cansado', 'Desganado', 'Triste', 'Irritado', 'Nervioso'],
@@ -15,8 +16,13 @@ const MedicionSubjetiva = ({ match }) => {
 
   const history = useHistory()
   const { paso } = match.params
-  const [animoGeneral, setAnimoGeneral] = useState('no especificado')
+  const [animoGeneral, setAnimoGeneral] = useState(null)
   const [animoSeleccionado, setAnimoSeleccionado] = useState(null)
+
+  if (paso === '2' && !animoGeneral) {
+    history.push('/subjetiva/1')
+    return null
+  }
 
   const irAPaso2 = animo => () => {
     setAnimoGeneral(animo)
@@ -29,30 +35,30 @@ const MedicionSubjetiva = ({ match }) => {
         <h1>Me siento...</h1>
         {paso === '1' ?
           <div className="contenedor-iconos-estado-animo">
-            <div className="contenedor-estado-animo">
-              <FontAwesomeIcon onClick={irAPaso2('malos')} icon={faFrown} size={"5x"} />
-            </div>
-            <div className="contenedor-estado-animo">
-              <FontAwesomeIcon onClick={irAPaso2('meh')} icon={faMeh} size={"5x"} />
-            </div>
-            <div className="contenedor-estado-animo">
-              <FontAwesomeIcon onClick={irAPaso2('buenos')} icon={faSmile} size={"5x"} />
-            </div>
+            <button className="boton-estado-animo" onClick={irAPaso2('malos')}>
+              <Emoji emoji="slightly-frowning-face" size="70" />
+            </button>
+            <button className="boton-estado-animo" onClick={irAPaso2('meh')}>
+              <Emoji emoji="neutral-face" size="70" />
+            </button>
+            <button className="boton-estado-animo" onClick={irAPaso2('buenos')}>
+              <Emoji emoji="slightly-smiling-face" size="70" />
+            </button>
           </div> :
           <>
             <div className="contenedor-iconos-estado-animo">
               {animosClasificados[animoGeneral]
                 .map(nombre => animos.find(animo => animo.nombre === nombre))
                 .map(({icono, nombre}, i) => (
-                  <div
+                  <button
                     key={`animo-${i}`}
-                    className={nombre === animoSeleccionado ? "contenedor-estado-animo-seleccionado" : "contenedor-estado-animo"}
+                    className={nombre === animoSeleccionado ? "boton-estado-animo" : "boton-estado-animo"}
                     style={animosClasificados[animoGeneral].length % 2 === 0 ? {flexBasis: 150} : {}}
                     onClick={e => setAnimoSeleccionado(nombre)}
                   >
-                    <FontAwesomeIcon icon={icono} size={"5x"} />
+                    <Emoji emoji={icono} size="70" />
                     <p>{nombre}</p>
-                  </div>
+                  </button>
                 ))
               }
             </div>
