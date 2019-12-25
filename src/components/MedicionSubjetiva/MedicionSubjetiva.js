@@ -54,7 +54,10 @@ const MedicionSubjetiva = ({ match }) => {
                     key={`animo-${i}`}
                     className={nombre === animoSeleccionado ? "boton-estado-animo" : "boton-estado-animo"}
                     style={animosClasificados[animoGeneral].length % 2 === 0 ? {flexBasis: 150} : {}}
-                    onClick={e => setAnimoSeleccionado(nombre)}
+                    onClick={e => {
+                      history.push('/')
+                      setAnimoSeleccionado(nombre)
+                    }}
                   >
                     <Emoji emoji={icono} size="70" />
                     <p>{nombre}</p>
@@ -62,7 +65,6 @@ const MedicionSubjetiva = ({ match }) => {
                 ))
               }
             </div>
-            <button onClick={() => history.push('/')}>Guardar</button>
           </>
         }
       </div>

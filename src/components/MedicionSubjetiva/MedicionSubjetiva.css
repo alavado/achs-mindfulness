@@ -24,9 +24,23 @@
   flex-basis: 100px;
   margin-bottom: 32px;
   background-color: transparent;
+  border-radius: 8px;
   transform: scale(1.2);
   opacity: 0;
   animation: aparece-carita .5s ease-in-out forwards;
+}
+
+.boton-estado-animo > p {
+  color: white;
+  background-color: #aa4b6b;
+  border: 1px solid white;
+  border-radius: 16px;
+  margin-top: 8px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
 }
 
 @keyframes aparece-carita {
