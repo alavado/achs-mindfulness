@@ -17,10 +17,18 @@ const Dass21 = ({ match }) => {
   const history = useHistory()
   const { paso } = match.params
   const [alternativaSeleccionada, setAlternativaSeleccionada] = useState(null)
+  const [respuestas, setRespuestas] = useState(preguntas.map(p => ({...p, respuesta: 0})))
+
+  console.log(respuestas)
 
   const irAPaso = paso => () => {
     setAlternativaSeleccionada(null)
     if (paso <= preguntas.length) {
+      if (paso > 1) {
+        let nuevasRespuestas = [...respuestas]
+        nuevasRespuestas[paso - 2].respuesta = alternativaSeleccionada
+        setRespuestas(nuevasRespuestas)
+      }
       history.push(`/dass21/${paso}`)
     }
     else {
@@ -42,7 +50,7 @@ const Dass21 = ({ match }) => {
             <button onClick={irAPaso(1)}>Comenzar</button>
           </> :
           <>
-            <h1>{preguntas[Number(paso) - 1]}</h1>
+            <h1>{preguntas[Number(paso) - 1].enunciado}</h1>
             <ul>
               {alternativas.map((a, i) => (
                 <li
