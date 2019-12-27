@@ -19,8 +19,6 @@ const Dass21 = ({ match }) => {
   const [alternativaSeleccionada, setAlternativaSeleccionada] = useState(null)
   const [respuestas, setRespuestas] = useState(preguntas.map(p => ({...p, respuesta: 0})))
 
-  console.log(respuestas)
-
   const irAPaso = paso => () => {
     setAlternativaSeleccionada(null)
     if (paso <= preguntas.length) {

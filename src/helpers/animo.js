@@ -4,7 +4,7 @@ export const animos = [
    // I. Pleasant activation (energetic, excited)
   {
     nombre: 'Eufórico',
-    icono: 'partying-face',
+    icono: 'grinning-squinting-face',
     activacion: 2,
     placer: 1
   },
