@@ -34,6 +34,7 @@
 }
 
 .boton-meditar {
+  position: relative;
   background: #aa4b6b;  /* fallback for old browsers */
   color: white;
   border: 2px solid white;
@@ -43,7 +44,7 @@
   width: 150px;
   height: 150px;
   border-radius: 75px 75px;
-  z-index: 2;
+  z-index: 1;
 }
 
 @keyframes latir {
