@@ -42,6 +42,7 @@
   animation: aparece-alternativa .5s ease-in-out forwards;
   opacity: 0;
   transform: translateY(-20px);
+  cursor: pointer;
 }
 
 @keyframes aparece-alternativa {

@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import './MedicionSubjetiva.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { animos } from '../../helpers/animo'
-import { faFrown, faSmile, faMeh, faSortAmountDown } from '@fortawesome/free-solid-svg-icons'
 import { useHistory } from 'react-router-dom'
 import Emoji from 'react-emojis'
 
