@@ -7,6 +7,7 @@ import Dass21 from '../Dass21';
 import MedicionSubjetiva from '../MedicionSubjetiva';
 import SeleccionEjercicio from '../SeleccionEjercicio';
 import logo from '../../assets/images/Logo_ACHS.png'
+import Meditacion from '../Meditacion';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/dass21/:paso" component={Dass21} />
         <Route exact path="/subjetiva/:paso" component={MedicionSubjetiva} />
         <Route exact path="/ejercicios" component={SeleccionEjercicio} />
+        <Route exact path="/ejercicios/:id" component={Meditacion} />
         <Route exact path="/otras" component={Otras} />
       </Switch>
     </div>

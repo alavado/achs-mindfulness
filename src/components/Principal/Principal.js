@@ -11,7 +11,7 @@ const Principal = () => {
       <Link to="/dass21/0" id="link-dass21"><FontAwesomeIcon icon={iconoDass21} size="2x" /></Link>
       <h1>Mindfulness</h1>
       <div className="contenido-centrado">
-        <Link to="/ejercicios">
+        <Link to="/ejercicios/1">
           <div className="latido"></div>
           <button className="boton-meditar">Meditar</button>
         </Link>
